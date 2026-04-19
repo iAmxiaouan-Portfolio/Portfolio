@@ -40,7 +40,7 @@
   }
 
   /* --- Scroll Reveal (staggered, organic) --- */
-  var reveals = document.querySelectorAll('.reveal');
+  var reveals = document.querySelectorAll('.showcase-item, .reveal');
   if (reveals.length > 0 && 'IntersectionObserver' in window) {
     var revealObserver = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {

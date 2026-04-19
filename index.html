@@ -3,12 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="IAMXIAOXUAN — Automotive Designer & Artist Portfolio">
-  <meta name="robots" content="index,follow">
+  <meta name="description" content="IAMXIAOXUAN — Automotive Designer Portfolio">
   <title>IAMXIAOXUAN</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <!-- Top Navigation -->
+  <nav class="top-nav">
+    <div class="nav-logo"><a href="index.html">IAMXIAOXUAN</a></div>
+    <div class="nav-menu">
+      <a href="projects/horizon.html">Projects</a>
+      <a href="about.html">Resume</a>
+    </div>
+  </nav>
 
   <!-- Mobile Menu Toggle -->
   <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">☰</button>
@@ -16,137 +24,106 @@
   <!-- Mobile Menu Overlay -->
   <div class="mobile-menu-overlay" id="mobileMenu" role="dialog" aria-modal="true">
     <button class="mobile-menu-close" aria-label="Close menu">×</button>
-    <div class="mobile-nav-name">IAMXIAOXUAN</div>
-
-    <div class="mobile-nav-section-title">Design Projects:</div>
     <div class="mobile-nav-links">
-      <ul>
-        <li><a href="projects/horizon.html">2036 Horizon Concept</a></li>
-        <li><a href="projects/ethereal.html">2040 Ethereal Motion</a></li>
-        <li><a href="projects/silent-form.html">2045 Silent Form</a></li>
-        <li><a href="projects/neon-drift.html">Neon Drift Study</a></li>
-        <li><a href="projects/void.html">Void Architecture</a></li>
-      </ul>
-    </div>
-
-    <div class="mobile-nav-break"></div>
-
-    <div class="mobile-nav-section-title">Photography:</div>
-    <div class="mobile-nav-links">
-      <ul>
-        <li><a href="projects/luminance.html">Luminance</a></li>
-        <li><a href="projects/solitude.html">Solitude</a></li>
-        <li><a href="projects/urban.html">Urban Fragments</a></li>
-        <li><a href="projects/still.html">Still Breathing</a></li>
-      </ul>
-    </div>
-
-    <div class="mobile-nav-break"></div>
-
-    <div class="mobile-nav-about">
-      <a href="about.html">About</a>
+      <a href="projects/horizon.html">2036 Horizon Concept</a>
+      <a href="projects/ethereal.html">2040 Ethereal Motion</a>
+      <a href="projects/silent-form.html">2045 Silent Form</a>
+      <a href="projects/neon-drift.html">Neon Drift Study</a>
+      <a href="projects/void.html">Void Architecture</a>
+      <a href="projects/luminance.html">Luminance</a>
+      <a href="projects/solitude.html">Solitude</a>
+      <a href="projects/urban.html">Urban Fragments</a>
+      <a href="projects/still.html">Still Breathing</a>
+      <a href="about.html">Resume</a>
     </div>
   </div>
 
-  <!-- Site Wrapper -->
-  <div class="site-wrapper page-fade">
+  <!-- Hero Section -->
+  <section class="hero">
+    <img class="hero-bg" src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=1920&q=85&fit=crop" alt="">
+    <div class="hero-content">
+      <h1 class="hero-name">Xiaoxuan</h1>
+      <div class="hero-tagline">Automotive Design / Advanced Concept / Form & Surface</div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
 
-    <!-- Left Sidebar Navigation -->
-    <nav class="nav-sidebar" aria-label="Main navigation">
-      <h1 class="site-name"><a href="index.html">IAMXIAOXUAN</a></h1>
+  <!-- Design Projects Showcase -->
+  <section class="showcase">
 
-      <div class="nav-section">
-        <div class="nav-section-title">Design Projects:</div>
-        <div class="nav-links">
-          <ul>
-            <li><a href="projects/horizon.html">2036 Horizon Concept</a></li>
-            <li><a href="projects/ethereal.html">2040 Ethereal Motion</a></li>
-            <li><a href="projects/silent-form.html">2045 Silent Form</a></li>
-            <li><a href="projects/neon-drift.html">Neon Drift Study</a></li>
-            <li><a href="projects/void.html">Void Architecture</a></li>
-          </ul>
+    <div class="showcase-item">
+      <a href="projects/horizon.html">
+        <img class="showcase-img" src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=1600&h=900&fit=crop&q=85" alt="2036 Horizon Concept" loading="lazy">
+        <div class="showcase-info">
+          <div class="showcase-title">2036 Horizon Concept</div>
+          <div class="showcase-meta">Autonomous GT / Concept</div>
         </div>
-      </div>
+      </a>
+    </div>
 
-      <div class="nav-section">
-        <div class="nav-section-title">Photography:</div>
-        <div class="nav-links">
-          <ul>
-            <li><a href="projects/luminance.html">Luminance</a></li>
-            <li><a href="projects/solitude.html">Solitude</a></li>
-            <li><a href="projects/urban.html">Urban Fragments</a></li>
-            <li><a href="projects/still.html">Still Breathing</a></li>
-          </ul>
+    <div class="showcase-item narrow-right">
+      <a href="projects/ethereal.html">
+        <img class="showcase-img" src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1400&h=800&fit=crop&q=85" alt="2040 Ethereal Motion" loading="lazy">
+        <div class="showcase-info">
+          <div class="showcase-title">2040 Ethereal Motion</div>
+          <div class="showcase-meta">Electric Sports Car</div>
         </div>
-      </div>
+      </a>
+    </div>
 
-      <div class="nav-about">
-        <a href="about.html">About</a>
-      </div>
-    </nav>
+    <div class="showcase-item">
+      <a href="projects/silent-form.html">
+        <img class="showcase-img" src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=1600&h=900&fit=crop&q=85" alt="2045 Silent Form" loading="lazy">
+        <div class="showcase-info">
+          <div class="showcase-title">2045 Silent Form</div>
+          <div class="showcase-meta">Luxury Sedan / Form Study</div>
+        </div>
+      </a>
+    </div>
 
-    <!-- Main Content — Irregular Masonry Grid -->
-    <main class="main-content">
-      <div class="thumbnail-grid">
+    <div class="showcase-item narrow-left">
+      <a href="projects/neon-drift.html">
+        <img class="showcase-img" src="https://images.unsplash.com/photo-1542362567-b07e54358753?w=1400&h=800&fit=crop&q=85" alt="Neon Drift Study" loading="lazy">
+        <div class="showcase-info">
+          <div class="showcase-title">Neon Drift Study</div>
+          <div class="showcase-meta">Light & Material</div>
+        </div>
+      </a>
+    </div>
 
-        <a href="projects/horizon.html" class="thumbnail-item tall space-lg reveal"
-           data-full="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=1600&q=90">
-          <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=600&h=800&fit=crop&q=80"
-               alt="2036 Horizon Concept" loading="lazy">
-        </a>
+    <div class="showcase-item">
+      <a href="projects/void.html">
+        <img class="showcase-img" src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=1600&h=900&fit=crop&q=85" alt="Void Architecture" loading="lazy">
+        <div class="showcase-info">
+          <div class="showcase-title">Void Architecture</div>
+          <div class="showcase-meta">Interior / Spatial</div>
+        </div>
+      </a>
+    </div>
 
-        <a href="projects/ethereal.html" class="thumbnail-item cinematic space-sm reveal"
-           data-full="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1600&q=90">
-          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&h=260&fit=crop&q=80"
-               alt="2040 Ethereal Motion" loading="lazy">
-        </a>
+  </section>
 
-        <a href="projects/silent-form.html" class="thumbnail-item square pad-top-md space-xl narrow reveal"
-           data-full="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=1600&q=90">
-          <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=600&h=600&fit=crop&q=80"
-               alt="2045 Silent Form" loading="lazy">
-        </a>
-
-        <a href="projects/luminance.html" class="thumbnail-item wide space-md reveal"
-           data-full="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=90">
-          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=340&fit=crop&q=80"
-               alt="Luminance" loading="lazy">
-        </a>
-
-        <a href="projects/neon-drift.html" class="thumbnail-item portrait pad-top-lg space-lg reveal"
-           data-full="https://images.unsplash.com/photo-1542362567-b07e54358753?w=1600&q=90">
-          <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?w=600&h=900&fit=crop&q=80"
-               alt="Neon Drift Study" loading="lazy">
-        </a>
-
-        <a href="projects/void.html" class="thumbnail-item cinematic space-sm reveal"
-           data-full="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=1600&q=90">
-          <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=600&h=260&fit=crop&q=80"
-               alt="Void Architecture" loading="lazy">
-        </a>
-
-        <a href="projects/solitude.html" class="thumbnail-item tall pad-top-md space-xl indent-left reveal"
-           data-full="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?w=1600&q=90">
-          <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?w=600&h=800&fit=crop&q=80"
-               alt="Solitude" loading="lazy">
-        </a>
-
-        <a href="projects/urban.html" class="thumbnail-item wide space-md reveal"
-           data-full="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1600&q=90">
-          <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&h=340&fit=crop&q=80"
-               alt="Urban Fragments" loading="lazy">
-        </a>
-
-        <a href="projects/still.html" class="thumbnail-item square pad-top-sm space-lg narrow reveal"
-           data-full="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1600&q=90">
-          <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=600&h=600&fit=crop&q=80"
-               alt="Still Breathing" loading="lazy">
-        </a>
-
-      </div>
-    </main>
-
-  </div>
+  <!-- Photography Section -->
+  <section class="photo-section">
+    <div class="photo-section-title">Photography</div>
+    <div class="photo-grid">
+      <a href="projects/luminance.html">
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop&q=80" alt="Luminance" loading="lazy">
+      </a>
+      <a href="projects/solitude.html">
+        <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?w=600&h=400&fit=crop&q=80" alt="Solitude" loading="lazy">
+      </a>
+      <a href="projects/urban.html">
+        <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&h=400&fit=crop&q=80" alt="Urban Fragments" loading="lazy">
+      </a>
+      <a href="projects/still.html">
+        <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=600&h=400&fit=crop&q=80" alt="Still Breathing" loading="lazy">
+      </a>
+    </div>
+  </section>
 
   <!-- Lightbox -->
   <div class="lightbox-overlay" id="lightbox">
