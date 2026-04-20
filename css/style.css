@@ -458,7 +458,7 @@ ul, ol {
 
 .project-body {
   max-width: 56rem;
-  margin-bottom: 4rem;
+  margin-bottom: 0rem;
 }
 
 .project-body p {
@@ -468,6 +468,21 @@ ul, ol {
   color: rgba(255, 255, 255, 0.65);
   margin-bottom: 1.4rem;
 }
+
+/* 新增：全屏文字样式 */
+.project-body.full-width {
+  max-width: 100%; /* 撑满全屏 */
+  padding-right: 0; /* 如果有侧边栏，确保右侧间距合适 */
+}
+
+/* 针对全屏模式下的文字细节微调 */
+.project-body.full-width p {
+  font-size: 1.6rem; /* 全屏时字号稍微大一点点更大气 */
+  line-height: 1.8;  /* 增加行高，防止长句子看行 */
+  color: rgba(255, 255, 255, 0.8); /* 稍微调亮一点，增加对比度 */
+  text-align: justify; /* 两端对齐，让边缘整齐 */
+}
+
 
 .project-images {
   margin-top: 3rem;
