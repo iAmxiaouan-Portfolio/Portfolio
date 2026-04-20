@@ -23,7 +23,7 @@ body {
   font-weight: 300;
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.85);
-  background-color: #0a0a0a;
+  background-color: #000000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -150,7 +150,7 @@ ul, ol {
   font-weight: 200;
   letter-spacing: 0.06em;
   line-height: 1.1;
-  color: #ff0000;
+  color: #ffffff;
   text-transform: none;
   margin-bottom: 1.2rem;
   opacity: 0;
@@ -211,7 +211,8 @@ ul, ol {
 
 .showcase-item {
   position: relative;
-  width: 100%;
+  width: calc(100% - 8rem); /* 刚才你说要左右各 4rem，所以减去 8rem */
+  margin: 4rem auto;        /* 上下 4rem，居中 */
   overflow: hidden;
   cursor: pointer;
 }
@@ -229,36 +230,50 @@ ul, ol {
               opacity 0.5s ease;
 }
 
-.showcase-item:hover .showcase-img {
-  transform: scale(1.03);
-  opacity: 0.7;
-}
-
+/* 注意这里：加上了前面的点 .showcase-info */
 .showcase-info {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   right: 0;
-  padding: 3rem 3.5rem;
-  background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%);
+  bottom: 0;
+  
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  opacity: 0; /* 默认隐藏 */
+  transition: opacity 0.5s ease;
+  background: rgba(0, 0, 0, 0.4); /* 黑色半透明遮罩 */
+  padding: 0;
+  pointer-events: none;
+  z-index: 2; /* 确保标题在图片上方 */
+}
+
+/* 触发动作：鼠标放上去时显示文字 */
+.showcase-item:hover .showcase-info {
+  opacity: 1;
+}
+
+.showcase-item:hover .showcase-img {
+  transform: scale(1.05);
 }
 
 .showcase-title {
-  font-size: 2.4rem;
+  font-size: 4rem;
   font-weight: 300;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.1em;
   color: #fff;
+  margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 .showcase-meta {
-  font-size: 1.1rem;
-  font-weight: 300;
-  letter-spacing: 0.12em;
-  text-transform: none;
-  color: rgba(255, 255, 255, 0.45);
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
 }
 
 /* Reveal animation for showcase items */
