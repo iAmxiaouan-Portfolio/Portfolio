@@ -129,3 +129,29 @@
     }
   });
 })();
+
+window.addEventListener('load', () => {
+    const observerOptions = {
+        root: null,
+        threshold: 0.1, // 元素进入或离开 10% 时触发
+        rootMargin: "-50px 0px" // 稍微偏移，让动画在接近中心时更明显
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // 进入视野：添加类名，触发显现动画
+                entry.target.classList.add('visible');
+            } else {
+                // 离开视野：移除类名，恢复初始隐藏状态
+                // 这样当你往回翻的时候，它会再次触发动画
+                entry.target.classList.remove('visible');
+            }
+        });
+    }, observerOptions);
+
+    const items = document.querySelectorAll('.proj-img');
+    items.forEach(item => {
+        observer.observe(item);
+    });
+});
